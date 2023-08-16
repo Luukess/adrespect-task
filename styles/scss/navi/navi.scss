@@ -2,6 +2,7 @@
 
 .navi-container {
     max-width: 1262px;
+    height: 72px;
 
     #navi-nav-desktop.nav {
         gap: 48px;
@@ -15,6 +16,30 @@
             font-weight: 400;
             line-height: 150%;
             letter-spacing: -0.14px;
+            transition: color 0.3s linear;
+
+            &:hover {
+                color: $primary;
+            }
+
+        }
+
+        #offer-dropdown-menu {
+            border-radius: 5px;
+
+            .dropdown-item {
+                color: $text-black;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+            content: '';
         }
     }
 }
