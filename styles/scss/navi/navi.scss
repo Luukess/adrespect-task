@@ -1,0 +1,26 @@
+@import '../vars/vars.scss';
+
+.navi-container {
+    max-width: 1262px;
+
+    #navi-nav-desktop.nav {
+        gap: 48px;
+        display: none;
+
+        .nav-link {
+            color: $text-black;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: -0.14px;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    #navi-nav-desktop.nav {
+        display: flex !important;
+    }
+}

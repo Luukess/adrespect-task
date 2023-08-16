@@ -4,5 +4,6 @@
     padding: 0;
 }
 
-$primary: red;
+@import './vars/vars.scss';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './navi/navi.scss';
