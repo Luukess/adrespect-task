@@ -42,10 +42,31 @@
             content: '';
         }
     }
+
+    #navi-nav-mobile {
+        display: block;
+
+        .navi-nav-mbile-container {
+            gap: 18px;
+
+            #lens-mobile,
+            #navi-mobile-button {
+                cursor: pointer;
+            }
+
+            #navi-mobile-button {
+                font-size: 28px;
+            }
+        }
+    }
 }
 
 @include media-breakpoint-up(md) {
     #navi-nav-desktop.nav {
         display: flex !important;
+    }
+
+    #navi-nav-mobile {
+        display: none !important;
     }
 }
