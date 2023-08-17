@@ -34,6 +34,12 @@
             .dropdown-item {
                 color: $text-black;
                 transition: all 0.3s linear;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -0.14px;
 
                 &:hover {
                     color: $primary;
@@ -100,6 +106,87 @@
 .search-input-hidden {
     display: none;
 }
+
+#mobile-navi-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: width 0.3s ease-out, background-color 0.3s ease-out;
+
+    .navi-layer-visible {
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        direction: rtl;
+    }
+
+    .navi-layer-hidden {
+        height: 0;
+        width: 0;
+        z-index: 0;
+        direction: ltr;
+    }
+
+    #mobile-body-navi {
+        transition: width 0.3s ease-out, background-color 0.3s ease-out;
+        overflow: auto;
+        direction: ltr;
+    }
+
+    .mobile-navi-hidden {
+        width: 0;
+        height: 0;
+    }
+
+    .mobile-navi-visible {
+        width: 280px;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    #mobile-header-navi {
+        width: 100%;
+        padding: 10px;
+
+        #close-navi-icon {
+            font-size: 28px;
+            cursor: pointer;
+        }
+    }
+
+    .mobile-header-navi-hidden {
+        display: none;
+    }
+
+    .mobile-header-navi-visible {
+        display: block;
+    }
+
+    #mobile-inner-body-navi {
+        width: 100%;
+    }
+
+    #basic-mobile-links {
+        .nav-link {
+            color: $text-black;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: -0.14px;
+            transition: color 0.3s linear;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+
+
 
 @include media-breakpoint-up(md) {
     #navi-nav-desktop.nav {
