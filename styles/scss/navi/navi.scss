@@ -24,6 +24,10 @@
 
         }
 
+        #lens-desktop {
+            cursor: pointer;
+        }
+
         #offer-dropdown-menu {
             border-radius: 5px;
 
@@ -59,6 +63,42 @@
             }
         }
     }
+}
+
+#search-container {
+    margin: 0 auto;
+    transition: all 0.3s linear;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    .search-input-container {
+        width: 280px;
+    }
+}
+
+.search-container-visible {
+    background-color: $grayBackgroun;
+    max-width: 1262px;
+    height: 58px;
+    padding: 0 10px;
+}
+
+.search-container-hidden {
+    max-width: 1262px;
+    padding: 0 10px;
+    height: 0;
+}
+
+#search-input {
+    transition: all 0.3s linear;
+}
+
+.search-input-visible {
+    display: block;
+}
+
+.search-input-hidden {
+    display: none;
 }
 
 @include media-breakpoint-up(md) {
