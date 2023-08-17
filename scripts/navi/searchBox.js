@@ -20,6 +20,7 @@ function handleMobileNav() {
     const navLayer = document.getElementById('navi-layer');
     const naviBody = document.getElementById('mobile-body-navi');
     const headerNavi = document.getElementById('mobile-header-navi');
+    const innerBodyMobileNav = document.getElementById('mobile-inner-body-navi');
     const widthOfNaviLayer = navLayer.offsetWidth;
     if (widthOfNaviLayer !== 0) {
         navLayer.classList.remove('navi-layer-visible');
@@ -28,6 +29,8 @@ function handleMobileNav() {
         naviBody.classList.add('mobile-navi-hidden');
         headerNavi.classList.remove('mobile-header-navi-visible');
         headerNavi.classList.add('mobile-header-navi-hidden');
+        innerBodyMobileNav.classList.remove('mobile-inner-body-visible');
+        innerBodyMobileNav.classList.add('mobile-inner-body-hidden');
     } else {
         navLayer.classList.remove('navi-layer-hidden');
         navLayer.classList.add('navi-layer-visible');
@@ -35,6 +38,8 @@ function handleMobileNav() {
         naviBody.classList.add('mobile-navi-visible');
         headerNavi.classList.remove('mobile-header-navi-hidden');
         headerNavi.classList.add('mobile-header-navi-visible');
+        innerBodyMobileNav.classList.remove('mobile-inner-body-hidden');
+        innerBodyMobileNav.classList.add('mobile-inner-body-visible');
     }
 }
 
@@ -42,8 +47,8 @@ function handleResetMenuResize() {
     const navLayer = document.getElementById('navi-layer');
     const naviBody = document.getElementById('mobile-body-navi');
     const headerNavi = document.getElementById('mobile-header-navi');
+    const innerBodyMobileNav = document.getElementById('mobile-inner-body-navi');
     const widthOfNaviLayer = navLayer.offsetWidth;
-
     if (window.innerWidth >= 768 && widthOfNaviLayer !== 0) {
         navLayer.classList.remove('navi-layer-visible');
         navLayer.classList.add('navi-layer-hidden');
@@ -51,6 +56,8 @@ function handleResetMenuResize() {
         naviBody.classList.add('mobile-navi-hidden');
         headerNavi.classList.remove('mobile-header-navi-visible');
         headerNavi.classList.add('mobile-header-navi-hidden');
+        innerBodyMobileNav.classList.remove('mobile-inner-body-visible');
+        innerBodyMobileNav.classList.add('mobile-inner-body-hidden');
     }
 }
 

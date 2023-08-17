@@ -111,9 +111,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    transition: width 0.3s ease-out, background-color 0.3s ease-out;
 
     .navi-layer-visible {
+        transition: width 0.3s ease-out, background-color 0.3s ease-out;
         width: 100vw;
         height: 100vh;
         z-index: 1;
@@ -166,6 +166,15 @@
     #mobile-inner-body-navi {
         width: 100%;
     }
+
+    .mobile-inner-body-hidden {
+        display: none;
+    }
+
+    .mobile-inner-body-visible {
+        display: block;
+    }
+
 
     #basic-mobile-links {
         .nav-link {
