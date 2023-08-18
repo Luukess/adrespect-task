@@ -1,0 +1,138 @@
+@import'../vars/vars.scss';
+
+#main-offer-container {
+    padding: 120px 0px 160px 0px;
+    gap: 96px;
+    background-color: $grayBackgroun;
+
+    #text-box-offer {
+        width: 1040px;
+        gap: 16px;
+
+        p#offer-small-label {
+            color: $primary;
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: -0.12px;
+        }
+
+        #main-text-box-offer {
+            width: 709px;
+            gap: 32px;
+
+            h2#offer-section-heading {
+                color: $text-black;
+                font-family: Montserrat;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 115%;
+                letter-spacing: -1.44px;
+
+                span#heading-part {
+                    color: $text-black;
+                    font-family: Inter;
+                    font-size: 48px;
+                    font-style: italic;
+                    font-weight: 500;
+                    line-height: 115%;
+                }
+            }
+
+            .offer-paragraph {
+                color: $text-black;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -0.16px;
+            }
+
+        }
+    }
+
+    #offer-cards-container {
+        padding: 0px 80px;
+        gap: 64px;
+        max-width: 100%;
+
+        .offer-box {
+            background-color: $cardsBackgroundColor;
+            width: 378px;
+            height: 370px;
+            padding: 48px 40px;
+            border-radius: 28px;
+
+            .offer-link-button {
+                padding: 0px;
+                gap: 10px;
+                border-radius: 0;
+                border-bottom: 0.5px solid $primary;
+                color: $primary;
+                transition: color 0.3s ease-out, border 0.3s ease-out;
+                border-bottom: 1px solid $primary;
+                text-align: center;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+
+                &:hover {
+                    color: $hoverBoxOfferLink;
+                    border-bottom: 1px solid $hoverBoxOfferLink;
+                }
+            }
+
+            .main-offer-box {
+                gap: 32px;
+
+                #box-offer-1-icon {
+                    width: 40px;
+                    height: 40px;
+                    flex-shrink: 0;
+                }
+
+                #box-offer-2-icon {
+                    width: 48px;
+                    height: 28.96px;
+                    flex-shrink: 0;
+                }
+
+                #box-offer-3-icon {
+                    width: 44px;
+                    height: 44px;
+                    flex-shrink: 0;
+                }
+
+                .main-offer-box-content {
+                    gap: 12px;
+
+                    .heading-box-offer {
+                        color: $text-black;
+                        font-family: Montserrat;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 115%;
+                        letter-spacing: -1.4px;
+                    }
+
+                    .content-box-offer {
+                        color: $text-black;
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%;
+                        letter-spacing: -0.14px;
+                    }
+                }
+            }
+        }
+    }
+}
