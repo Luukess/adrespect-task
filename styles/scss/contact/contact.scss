@@ -1,0 +1,219 @@
+@import '../vars/vars.scss';
+
+#main-contact-container {
+    padding: 60px 0px;
+    gap: 10px;
+    background-color: $grayBackgroun;
+
+    #contact-box {
+        width: 100%;
+        padding: 60px 20px;
+        gap: 64px;
+        background-color: $primary;
+
+        h3#contact-heading {
+            color: $textGrayColor;
+            font-family: Montserrat;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            letter-spacing: -2px;
+
+            span#contact-heading-part {
+                color: $textGrayColor;
+                font-family: Inter;
+                font-size: 26px;
+                font-style: italic;
+                font-weight: 500;
+                line-height: 120%;
+                letter-spacing: 1px;
+            }
+        }
+
+        #contact-box-with-button {
+            width: 157px;
+            gap: 24px;
+
+            #contact-box-with-button-text {
+                color: $textGrayColor;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -0.16px;
+            }
+
+            #contact-box-with-button-button {
+                color: $primary;
+                background-color: $grayBackgroun;
+                padding: 10px 24px 12px 24px;
+                gap: 10px;
+                text-align: center;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                border-radius: 200px;
+                transition: background-color 0.3s ease-out, color 0.3s ease-out;
+                border: 1px solid $grayBackgroun;
+
+                &:hover {
+                    border: 1px solid $textGrayColor;
+                    background-color: $primary;
+                    color: $textGrayColor;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    #main-contact-container {
+        padding: 60px 0px;
+        gap: 10px;
+
+        #contact-box {
+            width: 100%;
+            padding: 80px 50px;
+            gap: 64px;
+
+            h3#contact-heading {
+                font-size: 30px;
+
+                span#contact-heading-part {
+                    font-size: 30px;
+                }
+            }
+
+            #contact-box-with-button {
+                width: 157px;
+                gap: 24px;
+
+                #contact-box-with-button-text {
+                    font-size: 16px;
+                }
+
+                #contact-box-with-button-button {
+                    padding: 10px 24px 12px 24px;
+                    gap: 10px;
+                    font-size: 16px;
+
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    #main-contact-container {
+        padding: 60px 0px;
+        gap: 10px;
+
+        #contact-box {
+            width: 750px;
+            padding: 120px 110px;
+            gap: 64px;
+
+            h3#contact-heading {
+                font-size: 30px;
+
+                span#contact-heading-part {
+                    font-size: 30px;
+                }
+            }
+
+            #contact-box-with-button {
+                width: 157px;
+                gap: 24px;
+
+                #contact-box-with-button-text {
+                    font-size: 16px;
+                }
+
+                #contact-box-with-button-button {
+                    padding: 10px 24px 12px 24px;
+                    gap: 10px;
+                    font-size: 16px;
+
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #main-contact-container {
+        padding: 60px 0px;
+        gap: 10px;
+
+        #contact-box {
+            width: 975px;
+            padding: 120px 110px;
+            gap: 64px;
+
+            h3#contact-heading {
+                font-size: 36px;
+
+                span#contact-heading-part {
+                    font-size: 36px;
+                }
+            }
+
+            #contact-box-with-button {
+                width: 157px;
+                gap: 24px;
+
+                #contact-box-with-button-text {
+                    font-size: 16px;
+                }
+
+                #contact-box-with-button-button {
+                    padding: 10px 24px 12px 24px;
+                    gap: 10px;
+                    font-size: 16px;
+
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    #main-contact-container {
+        padding: 60px 0px;
+        gap: 10px;
+
+        #contact-box {
+            width: 1040px;
+            padding: 120px 110px;
+            gap: 64px;
+
+            h3#contact-heading {
+                font-size: 40px;
+
+                span#contact-heading-part {
+                    font-size: 40px;
+                }
+            }
+
+            #contact-box-with-button {
+                width: 157px;
+                gap: 24px;
+
+                #contact-box-with-button-text {
+                    font-size: 16px;
+                }
+
+                #contact-box-with-button-button {
+                    padding: 10px 24px 12px 24px;
+                    gap: 10px;
+                    font-size: 16px;
+
+                }
+            }
+        }
+    }
+}
