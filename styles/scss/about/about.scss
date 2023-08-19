@@ -1,0 +1,299 @@
+@import '../vars/vars.scss';
+
+#main-container-about-company {
+    gap: 0;
+    background-color: $primary;
+    background-image: url('../../../assets/about/about-company-photo.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+
+    #about-comany-photo-container {
+        height: 550px;
+        width: 0;
+        background-image: url('../../../assets/about/about-company-photo.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+    }
+
+    #about-company-description-container {
+        padding: 15px 20px;
+        width: 100%;
+        gap: 72px;
+        height: 100%;
+
+        #about-company-content-box {
+            gap: 16px;
+
+            #about-company-small-label {
+                color: $textGrayColor;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -0.12px;
+            }
+
+            #about-company-main-content-container {
+                gap: 40px;
+
+                h3#offer-heading {
+                    margin: 0;
+                    width: 250px;
+                    color: $textGrayColor;
+                    font-family: Montserrat;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 115%;
+                    letter-spacing: -1.44px;
+
+                    span#offer-heading-part {
+                        color: $textGrayColor;
+                        font-family: Inter;
+                        font-size: 36px;
+                        font-style: italic;
+                        font-weight: 500;
+                        line-height: 115%;
+                    }
+                }
+
+                #about-company-content {
+                    margin: 0 10px 0 0;
+                    color: $textGrayColor;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.16px;
+                }
+            }
+        }
+
+        #about-company-button {
+            padding: 12px 22px 14px 22px;
+            gap: 8px;
+            border-radius: 200px;
+            transition: background-color 0.3s ease-out, color 0.3s ease-out;
+            border-color: $textGrayColor;
+            color: $textGrayColor;
+
+            &:hover {
+                background-color: $textGrayColor;
+                color: $primary;
+            }
+        }
+
+
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    #main-container-about-company {
+        gap: 0px !important;
+        background-image: url('../../../assets/about/about-company-photo.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+
+        #about-comany-photo-container {
+            height: 580px !important;
+            width: 0 !important;
+        }
+
+        #about-company-description-container {
+            padding: 0 20px !important;
+            width: 100% !important;
+            gap: 72px !important;
+            height: 100% !important;
+
+            #about-company-content-box {
+                gap: 16px !important;
+
+                #about-company-small-label {
+                    font-size: 12px !important;
+                }
+
+                #about-company-main-content-container {
+                    gap: 40px !important;
+
+                    h3#offer-heading {
+                        width: 250px !important;
+                        font-size: 36px !important;
+
+                        span#offer-heading-part {
+                            font-size: 36px !important;
+                        }
+                    }
+
+                    #about-company-content {
+                        margin: 0 10px 0 0 !important;
+                        font-size: 14px !important;
+                    }
+                }
+            }
+
+            #about-company-button {
+                padding: 12px 22px 14px 22px !important;
+                gap: 8px !important;
+            }
+
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    #main-container-about-company {
+        gap: 64px !important;
+        background-image: none;
+
+        #about-comany-photo-container {
+            height: 624px !important;
+            width: 50% !important;
+        }
+
+        #about-company-description-container {
+            padding: 0 !important;
+            width: 50% !important;
+            gap: 72px !important;
+            height: 100% !important;
+
+            #about-company-content-box {
+                gap: 16px !important;
+
+                #about-company-small-label {
+                    font-size: 12px !important;
+                }
+
+                #about-company-main-content-container {
+                    gap: 40px !important;
+
+                    h3#offer-heading {
+                        width: 250px !important;
+                        font-size: 36px !important;
+
+                        span#offer-heading-part {
+                            font-size: 36px !important;
+                        }
+                    }
+
+                    #about-company-content {
+                        margin: 0 10px 0 0 !important;
+                        font-size: 14px !important;
+                    }
+                }
+            }
+
+            #about-company-button {
+                padding: 12px 22px 14px 22px !important;
+                gap: 8px !important;
+            }
+
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #main-container-about-company {
+        gap: 48px !important;
+        background-image: none;
+
+        #about-comany-photo-container {
+            height: 650px !important;
+            width: 50% !important;
+        }
+
+        #about-company-description-container {
+            padding: 0 !important;
+            width: 50% !important;
+            gap: 72px !important;
+            height: 100% !important;
+
+            #about-company-content-box {
+                gap: 16px !important;
+
+                #about-company-small-label {
+                    font-size: 12px !important;
+                }
+
+                #about-company-main-content-container {
+                    gap: 40px !important;
+
+                    h3#offer-heading {
+                        width: 250px !important;
+                        font-size: 40px !important;
+
+                        span#offer-heading-part {
+                            font-size: 40px !important;
+                        }
+                    }
+
+                    #about-company-content {
+                        margin: 0 10px 0 0 !important;
+                        font-size: 14px !important;
+                    }
+                }
+            }
+
+            #about-company-button {
+                padding: 12px 22px 14px 22px !important;
+                gap: 8px !important;
+            }
+
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    #main-container-about-company {
+        gap: 64px !important;
+        background-image: none;
+
+        #about-comany-photo-container {
+            height: 688px !important;
+            width: 720px !important;
+        }
+
+        #about-company-description-container {
+            padding: 0 0 0 96px !important;
+            width: 596px !important;
+            gap: 72px !important;
+            height: 100% !important;
+
+            #about-company-content-box {
+                gap: 16px !important;
+
+                #about-company-small-label {
+                    font-size: 12px !important;
+                }
+
+                #about-company-main-content-container {
+                    gap: 40px !important;
+
+                    h3#offer-heading {
+                        width: 250px !important;
+                        font-size: 48px !important;
+
+                        span#offer-heading-part {
+                            font-size: 48px !important;
+                        }
+                    }
+
+                    #about-company-content {
+                        margin: 0 !important;
+                        font-size: 16px !important;
+                    }
+                }
+            }
+
+            #about-company-button {
+                padding: 12px 22px 14px 22px !important;
+                gap: 8px !important;
+            }
+
+        }
+    }
+}
