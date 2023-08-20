@@ -1,0 +1,94 @@
+@import '../vars/vars.scss';
+
+#main-footer-container {
+    padding: 80px 256px;
+    gap: 120px;
+    background-color: $footerBackground;
+
+    #footer-inner-box {
+        width: 1040px;
+        gap: 62px;
+
+        #footer-contact-box {
+            justify-content: space-between;
+
+            #footer-contact-button-box {
+                gap: 24px;
+
+                #footer-contact-text {
+                    color: $textGrayColor;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.16px;
+                }
+
+                #footer-contact-button {
+                    transition: all 0.3s ease-out;
+                    padding: 12px 24px 14px 24px;
+                    gap: 10px;
+                    border-radius: 200px;
+                }
+            }
+        }
+
+        hr {
+            width: 100%;
+            height: 1px;
+            color: $border-color;
+        }
+
+        #footer-menu-box {
+
+            #footer-menu {
+                gap: 48px;
+            }
+
+            .footer-link {
+                color: $textGrayColor;
+                text-align: center;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -0.14px;
+                text-decoration: none;
+            }
+
+            #footer-contact-links {
+                gap: 48px;
+            }
+        }
+    }
+
+    #footer-bottom-box {
+        width: 1040px;
+
+        #fotter-bottom-text {
+            color: $textGrayColor;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: -0.16px;
+        }
+
+        #footer-bottom-box-logo {
+            gap: 16px;
+
+            p {
+                color: $textGrayColor;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -0.16px;
+            }
+        }
+    }
+}
