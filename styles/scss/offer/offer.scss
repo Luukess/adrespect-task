@@ -10,13 +10,9 @@
         gap: 16px;
 
         p#offer-small-label {
+            @include basic-inter-font-text--12-ls;
             color: $primary;
-            font-family: Inter;
             font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            letter-spacing: -0.12px;
         }
 
         #main-text-box-offer {
@@ -24,32 +20,21 @@
             gap: 32px;
 
             h2#offer-section-heading {
+                @include basic-Montserrat-font-text--1-44-ls;
                 color: $text-black;
-                font-family: Montserrat;
                 font-size: 30px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 115%;
-                letter-spacing: -1.44px;
 
                 span#heading-part {
+                    @include basic-inter-font-text-non-ls-lh-115;
                     color: $text-black;
-                    font-family: Inter;
                     font-size: 30px;
-                    font-style: italic;
-                    font-weight: 500;
-                    line-height: 115%;
                 }
             }
 
             .offer-paragraph {
+                @include basic-inter-font-text--16-ls;
                 color: $text-black;
-                font-family: Inter;
                 font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 150%;
-                letter-spacing: -0.16px;
                 margin: 0;
             }
 
@@ -69,6 +54,7 @@
             border-radius: 28px;
 
             .offer-link-button {
+                @include basic-inter-font-text-non-ls;
                 padding: 0px;
                 gap: 10px;
                 border-radius: 0;
@@ -77,11 +63,7 @@
                 transition: color 0.3s ease-out, border 0.3s ease-out;
                 border-bottom: 1px solid $primary;
                 text-align: center;
-                font-family: Inter;
                 font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 150%;
 
                 &:hover {
                     color: $hoverBoxOfferLink;
@@ -114,24 +96,16 @@
                     gap: 12px;
 
                     .heading-box-offer {
+                        @include basic-Montserrat-font-text--1-4-ls;
                         color: $text-black;
-                        font-family: Montserrat;
                         font-size: 24px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 115%;
-                        letter-spacing: -1.4px;
                         margin: 0;
                     }
 
                     .content-box-offer {
+                        @include basic-inter-font-text;
                         color: $text-black;
-                        font-family: Inter;
                         font-size: 14px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 150%;
-                        letter-spacing: -0.14px;
                         margin: 0;
                     }
                 }

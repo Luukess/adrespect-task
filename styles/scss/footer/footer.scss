@@ -16,26 +16,19 @@
                 gap: 24px;
 
                 #footer-contact-text {
+                    @include basic-inter-font-text--16-ls;
                     color: $textGrayColor;
-                    font-family: Inter;
                     font-size: 14px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 150%;
-                    letter-spacing: -0.16px;
                 }
 
                 #footer-contact-button {
+                    @include basic-inter-font-text-non-ls;
                     transition: all 0.3s ease-out;
                     padding: 12px 24px 14px 24px;
                     gap: 10px;
                     border-radius: 200px;
                     text-align: center;
-                    font-family: Inter;
                     font-size: 14px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 150%;
                 }
             }
         }
@@ -53,14 +46,10 @@
             }
 
             .footer-link {
+                @include basic-inter-font-text;
                 color: $textGrayColor;
                 text-align: center;
-                font-family: Inter;
                 font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 150%;
-                letter-spacing: -0.14px;
                 text-decoration: none;
             }
 
@@ -74,26 +63,18 @@
         width: 100%;
 
         #fotter-bottom-text {
+            @include basic-inter-font-text--16-ls;
             color: $textGrayColor;
-            font-family: Inter;
             font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            letter-spacing: -0.16px;
         }
 
         #footer-bottom-box-logo {
             gap: 16px;
 
             p {
+                @include basic-inter-font-text--16-ls;
                 color: $textGrayColor;
-                font-family: Inter;
                 font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 150%;
-                letter-spacing: -0.16px;
             }
         }
     }

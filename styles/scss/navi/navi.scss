@@ -9,13 +9,9 @@
         display: none;
 
         .nav-link {
+            @include basic-inter-font-text;
             color: $text-black;
-            font-family: Inter;
             font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            letter-spacing: -0.14px;
             transition: color 0.3s linear;
 
             &:hover {
@@ -32,14 +28,10 @@
             border-radius: 5px;
 
             .dropdown-item {
+                @include basic-inter-font-text;
                 color: $text-black;
                 transition: all 0.3s linear;
-                font-family: Inter;
                 font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 150%;
-                letter-spacing: -0.14px;
 
                 &:hover {
                     color: $primary;
@@ -180,13 +172,9 @@
 
     #basic-mobile-links {
         .nav-link {
+            @include basic-inter-font-text;
             color: $text-black;
-            font-family: Inter;
             font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            letter-spacing: -0.14px;
             transition: color 0.3s linear;
 
             &:hover {

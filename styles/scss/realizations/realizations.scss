@@ -10,13 +10,9 @@
         gap: 16px;
 
         #realizations-small-label {
+            @include basic-inter-font-text--12-ls;
             color: $primary;
-            font-family: Inter;
             font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            letter-spacing: -0.12px;
         }
 
         h3#realizations-main-heading {
@@ -29,12 +25,9 @@
             letter-spacing: -1.44px;
 
             span#realizations-heading-part {
+                @include basic-inter-font-text-non-ls-lh-115;
                 color: $text-black;
-                font-family: Inter;
                 font-size: 36px;
-                font-style: italic;
-                font-weight: 500;
-                line-height: 115%;
             }
         }
     }
@@ -59,6 +52,7 @@
             transition: all 0.3s ease-out;
 
             #gallery-gradient-button {
+                @include basic-inter-font-text-non-ls;
                 color: $text-black;
                 border-color: $text-black;
                 display: inline-flex;
@@ -68,11 +62,7 @@
                 transition: all 0.3s ease-out;
                 border-radius: 200px;
                 text-align: center;
-                font-family: Inter;
                 font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 150%;
 
                 &:hover {
                     color: $primary;
