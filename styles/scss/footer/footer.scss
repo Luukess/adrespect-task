@@ -1,13 +1,13 @@
 @import '../vars/vars.scss';
 
 #main-footer-container {
-    padding: 80px 256px;
-    gap: 120px;
+    padding: 60px 15px;
+    gap: 90px;
     background-color: $footerBackground;
 
     #footer-inner-box {
-        width: 1040px;
-        gap: 62px;
+        width: 100%;
+        gap: 28px;
 
         #footer-contact-box {
             justify-content: space-between;
@@ -18,7 +18,7 @@
                 #footer-contact-text {
                     color: $textGrayColor;
                     font-family: Inter;
-                    font-size: 16px;
+                    font-size: 14px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 150%;
@@ -30,6 +30,12 @@
                     padding: 12px 24px 14px 24px;
                     gap: 10px;
                     border-radius: 200px;
+                    text-align: center;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
                 }
             }
         }
@@ -43,7 +49,7 @@
         #footer-menu-box {
 
             #footer-menu {
-                gap: 48px;
+                gap: 30px;
             }
 
             .footer-link {
@@ -59,18 +65,18 @@
             }
 
             #footer-contact-links {
-                gap: 48px;
+                gap: 30px;
             }
         }
     }
 
     #footer-bottom-box {
-        width: 1040px;
+        width: 100%;
 
         #fotter-bottom-text {
             color: $textGrayColor;
             font-family: Inter;
-            font-size: 16px;
+            font-size: 14px;
             font-style: normal;
             font-weight: 400;
             line-height: 150%;
@@ -83,11 +89,255 @@
             p {
                 color: $textGrayColor;
                 font-family: Inter;
-                font-size: 16px;
+                font-size: 14px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 150%;
                 letter-spacing: -0.16px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    #main-footer-container {
+        padding: 60px 10px;
+        gap: 120px;
+
+        #footer-inner-box {
+            width: 100%;
+            gap: 62px;
+
+            #footer-contact-box {
+                justify-content: space-between;
+
+                #footer-contact-button-box {
+                    gap: 12px;
+
+                    #footer-contact-text {
+                        font-size: 12px;
+                    }
+
+                    #footer-contact-button {
+                        padding: 12px 14px 14px 14px;
+                        gap: 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            #footer-menu-box {
+
+                #footer-menu {
+                    gap: 24px;
+                }
+
+                .footer-link {
+                    font-size: 12px;
+                }
+
+                #footer-contact-links {
+                    gap: 24px;
+                }
+            }
+        }
+
+        #footer-bottom-box {
+            width: 100%;
+
+            #fotter-bottom-text {
+                font-size: 14px;
+            }
+
+            #footer-bottom-box-logo {
+                gap: 16px;
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    #main-footer-container {
+        padding: 80px 10px;
+        gap: 120px;
+
+        #footer-inner-box {
+            width: 100%;
+            gap: 62px;
+
+            #footer-contact-box {
+                justify-content: space-between;
+
+                #footer-contact-button-box {
+                    gap: 24px;
+
+                    #footer-contact-text {
+                        font-size: 16px;
+                    }
+
+                    #footer-contact-button {
+                        padding: 12px 24px 14px 24px;
+                        gap: 10px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            #footer-menu-box {
+
+                #footer-menu {
+                    gap: 48px;
+                }
+
+                .footer-link {
+                    font-size: 14px;
+                }
+
+                #footer-contact-links {
+                    gap: 48px;
+                }
+            }
+        }
+
+        #footer-bottom-box {
+            width: 100%;
+
+            #fotter-bottom-text {
+                font-size: 16px;
+            }
+
+            #footer-bottom-box-logo {
+                gap: 16px;
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #main-footer-container {
+        padding: 80px 10px;
+        gap: 120px;
+
+        #footer-inner-box {
+            width: 956px;
+            gap: 62px;
+
+            #footer-contact-box {
+                justify-content: space-between;
+
+                #footer-contact-button-box {
+                    gap: 24px;
+
+                    #footer-contact-text {
+                        font-size: 16px;
+                    }
+
+                    #footer-contact-button {
+                        padding: 12px 24px 14px 24px;
+                        gap: 10px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            #footer-menu-box {
+
+                #footer-menu {
+                    gap: 48px;
+                }
+
+                .footer-link {
+                    font-size: 14px;
+                }
+
+                #footer-contact-links {
+                    gap: 48px;
+                }
+            }
+        }
+
+        #footer-bottom-box {
+            width: 956px;
+
+            #fotter-bottom-text {
+                font-size: 16px;
+            }
+
+            #footer-bottom-box-logo {
+                gap: 16px;
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    #main-footer-container {
+        padding: 80px 256px;
+        gap: 120px;
+
+        #footer-inner-box {
+            width: 1040px;
+            gap: 62px;
+
+            #footer-contact-box {
+                justify-content: space-between;
+
+                #footer-contact-button-box {
+                    gap: 24px;
+
+                    #footer-contact-text {
+                        font-size: 16px;
+                    }
+
+                    #footer-contact-button {
+                        padding: 12px 24px 14px 24px;
+                        gap: 10px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            #footer-menu-box {
+
+                #footer-menu {
+                    gap: 48px;
+                }
+
+                .footer-link {
+                    font-size: 14px;
+                }
+
+                #footer-contact-links {
+                    gap: 48px;
+                }
+            }
+        }
+
+        #footer-bottom-box {
+            width: 1040px;
+
+            #fotter-bottom-text {
+                font-size: 16px;
+            }
+
+            #footer-bottom-box-logo {
+                gap: 16px;
+
+                p {
+                    font-size: 16px;
+                }
             }
         }
     }
